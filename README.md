@@ -1,7 +1,7 @@
 # vuejs-todo
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1a05f91-5f3b-4891-9c50-af74883901c7/deploy-status)](https://app.netlify.com/sites/v-todos/deploys)
 [![Known Vulnerabilities](https://snyk.io/test/github/sahapranta/vuejs-todo/badge.svg?targetFile=package.json)](https://snyk.io/test/github/sahapranta/vuejs-todo?targetFile=package.json)
-[![Dependency Status](https://david-dm.org/sahapranta/vuejs-todo.svg)](https://david-dm.org/sahapranta/vuejs-todo)
+[![Dependency Status](https://david-dm.org/sahapranta/vuejs-todo.svg)](https://david-dm.org/sahapranta/vuejs-todo.svg)
 
 See Live [https://v-todos.netlify.app](https://v-todos.netlify.app)
 
