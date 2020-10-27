@@ -1,0 +1,40 @@
+<template>
+  <footer class="footer" v-show="todos.length">
+    <span class="todo-count">
+      <strong v-text="remaining"></strong>
+      {{pluralize('item', remaining)}} left
+    </span>
+    <ul class="filters">
+      <li>
+        <a href="#/all" :class="{selected: visibility == 'all'}">All</a>
+      </li>
+      <li>
+        <a href="#/active" :class="{selected: visibility == 'active'}">Active</a>
+      </li>
+      <li>
+        <a href="#/completed" :class="{selected: visibility == 'completed'}">Completed</a>
+      </li>
+    </ul>
+    <button
+      class="clear-completed"
+      @click="removeCompleted"
+      v-show="todos.length > remaining"
+    >Clear completed</button>
+  </footer>
+</template>
+
+<script>
+import { mapGetters } from "vuex";
+export default {
+  name: "TodoFooter",
+  methods: {
+    pluralize: function(word, count) {
+      return word + (count === 1 ? "" : "s");
+    },
+    removeCompleted: function() {
+      this.$store.commit("REMOVE_COMPLETED_TODO");
+    }
+  },
+  computed: mapGetters(["remaining", "todos", "visibility"])
+};
+</script>
