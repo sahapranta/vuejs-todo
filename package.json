@@ -1,6 +1,7 @@
 {
-  "name": "todo",
-  "version": "0.1.0",
+  "name": "vuejs-todo",
+  "version": "1.0.0",
+  "description": "Simple Vuejs Todo Application",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -22,5 +23,21 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahapranta/vuejs-todo.git"
+  },
+  "keywords": [
+    "vuejs",
+    "todo",
+    "vuex",
+    "vuex-persist"
+  ],
+  "author": "Pranta Saha <pranta1204@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sahapranta/vuejs-todo/issues"
+  },
+  "homepage": "https://v-todos.netlify.app"
 }
